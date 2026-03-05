@@ -1,0 +1,45 @@
+/**
+ * Hooks module exports
+ */
+
+export {
+  HOOK_EVENTS,
+  buildPreToolUseInput,
+  buildPostToolUseInput,
+  buildPostToolUseFailureInput,
+  buildUserPromptSubmitInput,
+  buildStopInput,
+  buildSessionStartInput,
+  buildSessionEndInput,
+  buildSubagentStartInput,
+  buildSubagentStopInput,
+  buildPreCompactInput,
+  buildPermissionRequestInput,
+  buildNotificationInput,
+  buildSetupInput,
+  buildTeammateIdleInput,
+  buildTaskCompletedInput,
+  buildConfigChangeInput,
+  buildWorktreeCreateInput,
+  buildWorktreeRemoveInput,
+  isPreToolUseInput,
+  isPostToolUseInput,
+  isPostToolUseFailureInput,
+  isUserPromptSubmitInput,
+  isStopInput,
+  isSessionStartInput,
+  isSessionEndInput,
+  isSubagentStartInput,
+  isSubagentStopInput,
+  isPreCompactInput,
+  isPermissionRequestInput,
+  isNotificationInput,
+  isSetupInput,
+  isTeammateIdleInput,
+  isTaskCompletedInput,
+  isConfigChangeInput,
+  isWorktreeCreateInput,
+  isWorktreeRemoveInput,
+} from './hook-event-registry-and-type-guards.js';
+
+export { HookExecutor } from './hook-execution-pipeline-with-timeout-and-regex-matching.js';

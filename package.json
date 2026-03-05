@@ -1,0 +1,55 @@
+{
+  "name": "agentic-sdk",
+  "version": "0.1.0",
+  "description": "Native TypeScript SDK for Claude agents - drop-in replacement for @anthropic-ai/claude-agent-sdk",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "test:integration": "vitest run tests/integration",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "dotenv": "^17.3.1",
+    "glob": "^11.0.1",
+    "minimatch": "^10.0.1",
+    "uuid": "^13.0.0"
+  },
+  "peerDependencies": {
+    "zod": "^3.24.1 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "anthropic",
+    "claude",
+    "agent",
+    "sdk",
+    "ai",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT"
+}
