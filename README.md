@@ -1,3 +1,5 @@
+> **Experimental and unmaintained. The supported SDK is `@privos_ai/privos-agent-sdk`.**
+
 # agentic-sdk
 
 Native TypeScript SDK for Claude agents - drop-in replacement for @anthropic-ai/claude-agent-sdk
